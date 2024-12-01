@@ -1,0 +1,40 @@
+.proj-imgbx{
+    width: 100%;
+    position: relative;
+    border-radius: 30px;
+    align-self: center;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.proj-txtx{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    border-radius: 15%;
+}
+
+.proj-txtx h4{
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1.1em;
+}
+
+.proj-txtx span{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+}
+
+.background-image-right{
+    top: 10%;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: -4;
+}
+

@@ -85,7 +85,7 @@ nav.navbar a.navbar-brand{
   width: 42px;
   height: 42px;
   position: absolute;
-  background-color: #61dafb;
+  background-color: lightskyblue;
   border-radius: 50%;
   transform: scale(0);
   transition: 0.3s ease-in-out;
@@ -127,7 +127,7 @@ nav.navbar a.navbar-brand{
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #ffffff;
+  background-color: black;
   left: 0;
   top: 0;
   z-index: -1;

@@ -1,0 +1,100 @@
+.experience{
+    padding: 80px 0;
+    position: relative;
+    background-color: #f1f1;
+}
+
+.experience h2{
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.experience p{
+    color: #f1f1f1;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px auto 20px auto;
+    text-align: center;
+    width: 56%;
+}
+
+.experience .nav.nav-pills{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 50px;
+    background-color: #f1f1;
+    overflow: hidden; 
+}
+
+.experience .nav.nav-pills .nav-item{
+    width: 33.33%;
+}
+
+.experience .nav.nav-pills .nav-link{
+    /* background-color: transparent; */
+    border-radius: 0;
+    padding: 17px 0;
+    color: #f1f1f1;
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    /* margin-bottom: 30px; */
+    z-index: 0;
+}
+
+.experience .nav.nav-pills .nav-link::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+}
+
+.experience .nav.nav-pills .nav-link.active::before{
+    width: 100% !important;
+}
+
+.experience .nav.nav-pills .nav-link.active{
+    border: 1px solid red;
+
+}
+
+.nav-link#experiences-tabs-tab-first{
+    border: 1px solid red;
+    border-radius: 55px 0px 0px 55px;
+}
+
+.nav-link#experiences-tabs-tab-second{
+    border: 1px solid red;
+}
+
+.nav-link#experiences-tabs-tab-third{
+    border: 1px solid red;
+    border-radius: 0px 55px 55px 0px;
+}
+
+
+.background-image-right{
+    top: 20%;
+    position: absolute;
+    bottom: 0;
+    width: 35%;
+    /* height: auto; */
+    right: 0;
+    z-index: -4;
+}
+
+.content-row{
+    justify-content: center;
+    align-items: center;
+}

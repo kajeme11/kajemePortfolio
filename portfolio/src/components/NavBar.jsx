@@ -47,24 +47,12 @@ export function NavBar() {
             <Nav.Link href="#link" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
             <Nav.Link href="#link" className={activeLink === 'experience' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('experience')}>Experience</Nav.Link>
             <Nav.Link href="#link" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
-            
-            {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown> */}
           
           </Nav>
           <span className="navbar-text">
               <div className="social-icon">
-                  <a href='#'><img src={navIcon1} alt="" /></a>
-                  <a href='#'><img src={navIcon2} alt="" /></a>
+                  <a href='dd'><img src={navIcon1} alt="" /></a>
+                  <a href='dd'><img src={navIcon2} alt="" /></a>
               </div>
               <button className="vvd" onClick={() => console.log("let's connect")}>
                   <span>Let's connect!</span>
