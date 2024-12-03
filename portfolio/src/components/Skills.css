@@ -55,8 +55,9 @@
 
 button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--right {
     background-color: rgba(26, 146, 226, 0.678);
-    
+    width: 10%;
   }
   button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left {
     background-color: rgba(26, 146, 226, 0.678);
-  }
+    width: 10%;
+}

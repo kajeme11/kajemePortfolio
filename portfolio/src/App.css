@@ -32,6 +32,8 @@ nav.navbar{
   top:0;
   z-index: 9999;
   transition: 0.32 ease-in-out;
+  background-color: #010101;
+  border-bottom: 1px solid #61dafb;
 }
 
 nav.navbar.scrolled{
@@ -109,11 +111,13 @@ nav.navbar a.navbar-brand{
 .navbar-text button {
   font-weight: 700;
   color: #ffffff;
-  border: 1px solid #ffffff;
+  /* border: 1px solid #ffffff; */
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
   position: relative;
+  width: 60%;
+  height: 30%;
   background-color: transparent;
   transition: 0.3s ease-in-out;
 }
@@ -127,7 +131,7 @@ nav.navbar a.navbar-brand{
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: black;
+  background-color: #282c34;
   left: 0;
   top: 0;
   z-index: -1;
@@ -191,7 +195,7 @@ nav.navbar .nav-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 }
 
 nav.navbar .nav-toggler[aria-expanded="true"] .navbar-toggler-icon {
-  border-color: transparent;
+  border-color: transparent; 
 }
 
 #root > div > nav > div > a > img{

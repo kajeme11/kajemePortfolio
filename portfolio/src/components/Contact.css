@@ -1,4 +1,50 @@
+
 .contact{
-    width: 100%;
-    background-color: aliceblue;
+    position: relative;
+    padding: 80px 0;
+    background-color: black;
+    border: 1px solid white;
 }
+
+.contact h2{
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
+form{
+    max-width: 500px;
+    margin: 20px auto;
+
+}
+
+input{
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    display: block;
+    color: black;
+}
+textarea {
+    margin: 0 auto;
+    width: 90%;
+    display: block;
+    color: black;
+    height: 200px;
+}
+
+input::placeholder{
+    color: black;
+}
+
+textarea::placeholder{
+    color: black;
+}
+
+button{
+    width: 25%;
+    color: black;
+    background-color: rgb(37, 89, 201);
+    margin-top: 0.5rem;
+}
+
