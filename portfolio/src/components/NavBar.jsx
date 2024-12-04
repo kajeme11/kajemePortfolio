@@ -6,7 +6,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import logo from '../assets/kj.png';
 import navIcon1 from '../assets/linkedin.svg';
 import navIcon2 from '../assets/github.svg';
-// import navIcon3 from '../assets/navIcon3.jpeg';
 
 export function NavBar() {
 
@@ -44,15 +43,16 @@ export function NavBar() {
                 onClick={() => onUpdateActiveLink('home')}>
                 Home
             </Nav.Link>
-            <Nav.Link href="#link" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-            <Nav.Link href="#link" className={activeLink === 'experience' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('experience')}>Experience</Nav.Link>
-            <Nav.Link href="#link" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+            <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} 
+            onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
+            <Nav.Link href="#experiences" className={activeLink === 'experiences' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('experiences')}>Experience</Nav.Link>
+            <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}>Contact</Nav.Link>
           
           </Nav>
           <span className="navbar-text">
               <div className="social-icon">
-                  <a href='dd'><img src={navIcon1} alt="" /></a>
-                  <a href='dd'><img src={navIcon2} alt="" /></a>
+                  <a href='https://www.linkedin.com/in/kajeme-cheneque-6ab119190/' target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="" /></a>
+                  <a href='https://github.com/kajeme11' target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="" /></a>
               </div>
               <button className="vvd" onClick={() => console.log("let's connect")}>
                   <span>Let's connect!</span>

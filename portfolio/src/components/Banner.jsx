@@ -12,8 +12,12 @@ export const Banner = () => {
                         <Col xs={12} md={6} xl={7}>
                             <span className="tagline">Kajeme's Portfolio</span>
                             <h1><span className="wrap">Software Engineer</span></h1>
-                            <p>Paragraph about me</p>
-                            <button onClick={() => console.log('connect')}>Message me <ArrowRightCircle size={25}/></button>
+                            <p>Welcome!<br></br>My name is Kajeme Cheneque, I am a passionate software engineer with 3 years 
+                            experience in developing, implementing solutions, and testing software.
+                            My expertise lies in Java, Spring Framework, React, Selenium, SQL, NoSQL, etc.
+                            I am looking to bring my technical expertise to a dynamic team where I can contribute to
+                            innovative projects and continue to grow as a professional. Could you please send me a 
+                            message with your thoughts on my portfolio?,I appreciate your time and feedback thank you!</p>
                         </Col>
                         <Col xs={12} md={6} xl={5}>
                             <img className="header-image" src={headerImage} alt={"Kajeme's Header"}/>

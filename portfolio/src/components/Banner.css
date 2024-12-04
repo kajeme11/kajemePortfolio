@@ -31,32 +31,13 @@
 
 .banner p{
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 700;
     letter-spacing: 0.8px;
     line-height: 1.5;
-    width: 95%;
-}
-
-.banner button{
-    color: #fff;
-    background-color: black;
-    font-weight: 700;
-    font-size: 20px;
-    margin-top: 60px;
-    letter-spacing: 0.8;
-    display: flex;
-    align-items: center;
-}
-
-.banner button svg {
-    font-size: 45px;
-    margin-left: 10px;
-    transition: 0.3 ease-in-out;
-    line-height: 1;
-}
-
-.banner button:hover svg {
-    margin-left: 25px;
+    max-width: 100%;
+    text-align: left;
+    /* width: 95%; */
 }
 
 .banner img {

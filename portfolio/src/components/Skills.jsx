@@ -31,7 +31,7 @@ export const Skills = () => {
 };
 
 return(
-    <div className='skill' id='skill'>
+    <div className='skill' id='skills'>
         <section>
          <Container>
              <Row>
