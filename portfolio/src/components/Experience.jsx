@@ -3,6 +3,9 @@ import { Container, Col, Row, Tab } from "react-bootstrap";
 import Nav from 'react-bootstrap/Nav';
 import { ExperienceCard } from './ExperienceCard';
 import experienceBackground from '../assets/startosphere.jpeg'
+import infoImg from '../assets/infosys.png'
+import wfImg from '../assets/wf.png'
+import kjImg from '../assets/kj.png'
 
 export const Experience = () => {
 
@@ -11,19 +14,22 @@ export const Experience = () => {
             company: "Wells Fargo",
             title: "Software Engineer",
             description: "Develop new features and solutions for Wells Fargo mobile App as requested by stakeholders.",
-            technologies: "Java, Spring, GraphQL, Mockito, SQL/MongoDB, Selenium, Cucumber"
+            technologies: "Java, Spring, GraphQL, Mockito, SQL/MongoDB, Selenium, Cucumber",
+            imgUrl: wfImg
         },
         {
             company: "Infosys",
             title: "Senior Associate",
             description: "Working with clients and understanding their technical requirements.\nCollaborating with external development teams and vendors.\nStaying up to date with current best practices in Software Development",
-            technologies: "Java, Spring, React, SQL/MongoDB, JUnit"
+            technologies: "Java, Spring, React, SQL/MongoDB, JUnit",
+            imgUrl: infoImg
         },
         {
             company: "Freelancer",
             title: "Web Developer",
             description: "Create websites for recreation or personal business. Create websites for recreation or personal business",
-            technologies: "Java, Spring, React, SQL"
+            technologies: "Java, Spring, React, SQL",
+            imgUrl: kjImg
         }
     ];
     const experienceWf = workExperience[0];

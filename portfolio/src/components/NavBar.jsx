@@ -54,7 +54,7 @@ export function NavBar() {
                   <a href='https://www.linkedin.com/in/kajeme-cheneque-6ab119190/' target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="" /></a>
                   <a href='https://github.com/kajeme11' target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="" /></a>
               </div>
-              <button className="vvd" onClick={() => console.log("let's connect")}>
+              <button className="vvd" onClick={() => window.location.href = '#contact'}>
                   <span>Let's connect!</span>
              </button>
           </span>

@@ -38,3 +38,10 @@
     z-index: -4;
 }
 
+img {
+    position: relative;
+    max-width: 40%;
+    
+    
+}
+
