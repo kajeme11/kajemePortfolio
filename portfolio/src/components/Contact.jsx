@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import "./Contact.css";
+import sayHi from '../assets/sayHi.png';
 
 export const Contact = () => {
 
@@ -47,10 +48,10 @@ export const Contact = () => {
                 <Container>
                     <Row className="align-items-center">
                         <Col md={6}>
-                            <img src={''} alt="Contact me" />
+                            <img className="hi" src={sayHi} alt="Contact me" />
                         </Col>
                         <Col md={6}>
-                            <h2>Say Hi!</h2>
+                            <h2></h2>
                             <form onSubmit={handleSubmit}>
                                 <Row>
                                     <Col sm={6} className="px-1">
