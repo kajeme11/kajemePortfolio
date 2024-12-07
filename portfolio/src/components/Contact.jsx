@@ -25,9 +25,9 @@ export const Contact = () => {
         e.preventDefault();
         setButtonText("Sending...");
         let response = await fetch(process.env.REACT_APP_MAILER_URL, {
-            method: "Post",
+            method: "POST",
             headers: {
-                "Content-Type": "Application/json;charset=utf-8",
+                'Content-Type': 'application/json',
             },
             body: JSON.stringify(formDetails),
         });
