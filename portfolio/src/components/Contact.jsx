@@ -33,7 +33,7 @@ export const Contact = () => {
             body: JSON.stringify(formDetails),
         }).then(data => console.log(data)).catch(err => console.log("Caught Error: " + err + "\n" + err.message));
         setButtonText("Send");
-        if(response.json != null){
+        if(response != null){
             let result = response.json();
             setFormDetails(formInitialDetails);
             if(result.code === 200){
