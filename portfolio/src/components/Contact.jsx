@@ -33,16 +33,17 @@ export const Contact = () => {
             body: JSON.stringify(formDetails),
         }).then(data => console.log(data)).catch(err => console.log("Caught Error: " + err + "\n" + err.message));
         setButtonText("Send");
-        let result = response.json();
-        setFormDetails(formInitialDetails);
-        if(result.code === 200){
-            console.log(formDetails);
-            setStatus({success: true, message: 'Message sent successfully'});
-        }else{
-            console.log("Error, post not successful");
-            setStatus({success: false, message: 'Something went wrong please try again later.'});
+        if(response.json != null){
+            let result = response.json();
+            setFormDetails(formInitialDetails);
+            if(result.code === 200){
+                console.log(formDetails);
+                setStatus({success: true, message: 'Message sent successfully'});
+            }else{
+                console.log("Error, post not successful");
+                setStatus({success: false, message: 'Something went wrong please try again later.'});
+            }
         }
-
     }
 
     return (
