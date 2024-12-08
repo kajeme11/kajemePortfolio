@@ -28,6 +28,7 @@ export const Contact = () => {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
+                'Authorization': `Bearer ${process.env.REACT_APP_TOKEN}`
             },
             body: JSON.stringify(formDetails),
         });
@@ -35,8 +36,10 @@ export const Contact = () => {
         let result = response.json();
         setFormDetails(formInitialDetails);
         if(result.code === 200){
+            console.log(formDetails);
             setStatus({success: true, message: 'Message sent successfully'});
         }else{
+            console.log("Error, post not successful");
             setStatus({success: false, message: 'Something went wrong please try again later.'});
         }
 
