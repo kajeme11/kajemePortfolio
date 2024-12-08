@@ -31,7 +31,7 @@ export const Contact = () => {
                 'Authorization': `Bearer ${process.env.REACT_APP_TOKEN}`
             },
             body: JSON.stringify(formDetails),
-        });
+        }).then(data => console.log(data)).catch(err => console.log("Caught Error: " + err + "\n" + err.message));
         setButtonText("Send");
         let result = response.json();
         setFormDetails(formInitialDetails);
