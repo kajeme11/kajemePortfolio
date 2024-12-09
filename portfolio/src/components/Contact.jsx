@@ -36,7 +36,7 @@ export const Contact = () => {
         setButtonText("Send");
         // console.log(response.status);
         console.log("Continueing post method!");
-        if(response != null){
+        // if(response != null){
             let result = response.json();
             setFormDetails(formInitialDetails);
             if(result.code === 200){
@@ -46,7 +46,7 @@ export const Contact = () => {
                 console.log("Error, post not successful");
                 setStatus({success: false, message: 'Something went wrong please try again later.'});
             }
-        }
+        // }
     }
 
     return (
