@@ -32,12 +32,14 @@ export const Contact = () => {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(formDetails),
-        }).then(data => console.log("Here is the data\n" + data)).catch(err => console.log("Caught Error: " + err + "\n" + err.message));
+        });
         setButtonText("Send");
         // console.log(response.status);
         console.log("Continueing post method!");
         // if(response != null){
+
             let result = response.json();
+            console.log(response);
             setFormDetails(formInitialDetails);
             if(result.code === 200){
                 console.log(formDetails);
