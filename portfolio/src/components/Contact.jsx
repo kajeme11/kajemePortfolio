@@ -39,11 +39,12 @@ export const Contact = () => {
         // if(response != null){
 
             let result = response.json();
-            console.log(response);
-            console.log(response.json());
-            console.log("Status" + result.status);
+            // console.log(response);
+            // console.log(response.json());
+            // console.log("Status" + result.status);
             setFormDetails(formInitialDetails);
             if(result.code === 200){
+                console.log("Successful call");
                 console.log(formDetails);
                 setStatus({success: true, message: 'Message sent successfully'});
             }else{
