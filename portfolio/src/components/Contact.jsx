@@ -39,7 +39,7 @@ export const Contact = () => {
         // if(response != null){
 
             let result = response.json();
-            // console.log(response);
+            console.log(response);
             // console.log(response.json());
             // console.log("Status" + result.status);
             setFormDetails(formInitialDetails);
