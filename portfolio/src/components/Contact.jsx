@@ -40,6 +40,8 @@ export const Contact = () => {
 
             let result = response.json();
             console.log(response);
+            console.log(response.json());
+            console.log("Status" + result.status);
             setFormDetails(formInitialDetails);
             if(result.code === 200){
                 console.log(formDetails);
