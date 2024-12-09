@@ -24,15 +24,18 @@ export const Contact = () => {
     const handleSubmit = async(e) => {
         e.preventDefault();
         setButtonText("Sending...");
-        let response = await fetch(process.env.REACT_APP_MAILER_URL, {
+        let response = await fetch(process.env.REACT_APP_MAILER_URL + "/contact", {
+            // let response = await fetch("http://localhost:3003/contact", {
             method: "POST",
             headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${process.env.REACT_APP_TOKEN}`
+                'Authorization': `Bearer ${process.env.REACT_APP_TOKEN}`,
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify(formDetails),
-        }).then(data => console.log(data)).catch(err => console.log("Caught Error: " + err + "\n" + err.message));
+        }).then(data => console.log("Here is the data\n" + data)).catch(err => console.log("Caught Error: " + err + "\n" + err.message));
         setButtonText("Send");
+        // console.log(response.status);
+        console.log("Continueing post method!");
         if(response != null){
             let result = response.json();
             setFormDetails(formInitialDetails);
