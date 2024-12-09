@@ -35,24 +35,16 @@ export const Contact = () => {
         });
         setButtonText("Send");
         // console.log(response.status);
-        console.log("Continueing post method!");
-        // if(response != null){
-
-            let result = response.json();
-            console.log(response.status);
-            console.log(result.status);
-            // console.log(response.json());
-            // console.log("Status" + result.status);
-            setFormDetails(formInitialDetails);
-            if(response.status === 200){
-                console.log("Successful call");
-                console.log(formDetails);
-                setStatus({success: true, message: 'Message sent successfully'});
-            }else{
-                console.log("Error, post not successful");
-                setStatus({success: false, message: 'Something went wrong please try again later.'});
-            }
-        // }
+        console.log("Continueing post method!");   
+        setFormDetails(formInitialDetails);
+        if(response.status === 200){
+            console.log("Successful call");
+            console.log(formDetails);
+            setStatus({success: true, message: 'Message sent successfully'});
+        }else{
+            console.log("Error, post not successful");
+            setStatus({success: false, message: 'Something went wrong please try again later.'});
+        }
     }
 
     return (
