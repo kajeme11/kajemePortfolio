@@ -43,7 +43,7 @@ export const Contact = () => {
             // console.log(response.json());
             // console.log("Status" + result.status);
             setFormDetails(formInitialDetails);
-            if(result.status === 200){
+            if(result.code === 200){
                 console.log("Successful call");
                 console.log(formDetails);
                 setStatus({success: true, message: 'Message sent successfully'});
