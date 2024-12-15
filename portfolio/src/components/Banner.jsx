@@ -1,9 +1,12 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-import headerImage from '../assets/portfolio2.jpeg'
-import './Banner.css'
+import resumeFile from '../assets/viewResume.jpeg';
+import './Banner.css';
+import resume from '../documents/KajemeResume_24.pdf';
+
 
 export const Banner = () => {
+
     return (
         <div className="banner" >
             <section className="banner-section" id="home">
@@ -20,7 +23,7 @@ export const Banner = () => {
                             message with your thoughts on my portfolio?,I appreciate your time and feedback thank you!</p>
                         </Col>
                         <Col xs={12} md={6} xl={5}>
-                            <img className="header-image" src={headerImage} alt={"Kajeme's Header"}/>
+                            <a href={resume} target="_blank"><img className="header-image" src={resumeFile} alt={"Kajeme's Header"}/></a>
                         </Col>
                     </Row>
                 </Container>
