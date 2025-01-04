@@ -5,7 +5,7 @@ import { ExperienceCard } from './ExperienceCard';
 import experienceBackground from '../assets/startosphere.jpeg'
 import infoImg from '../assets/infosys.png'
 import wfImg from '../assets/wf.png'
-import kjImg from '../assets/kj.png'
+import kjImg from '../assets/sfsu.png'
 
 export const Experience = () => {
 
@@ -13,22 +13,27 @@ export const Experience = () => {
         {
             company: "Wells Fargo",
             title: "Software Engineer",
-            description: "Develop new features and solutions for Wells Fargo mobile App as requested by stakeholders.",
+            description: `Worked closely with other developers, designers, product managers, and stakeholders
+                        to translate business requirements into technical solutions.`,
             technologies: "Java, Spring, GraphQL, Mockito, SQL/MongoDB, Selenium, Cucumber",
             imgUrl: wfImg
         },
         {
             company: "Infosys",
             title: "Senior Associate",
-            description: "Working with clients and understanding their technical requirements.\nCollaborating with external development teams and vendors.\nStaying up to date with current best practices in Software Development",
+            description: `Working with clients and understanding their technical requirements.
+            \nCollaborating with external development teams and vendors.
+            \nStaying up to date with current best practices in Software Development`,
             technologies: "Java, Spring, React, SQL/MongoDB, JUnit",
             imgUrl: infoImg
         },
         {
-            company: "Freelancer",
-            title: "Web Developer",
-            description: "Create websites for recreation or personal business. Create websites for recreation or personal business",
-            technologies: "Java, Spring, React, SQL",
+            company: "Education",
+            title: "Computer Science Bachelor's Degree",
+            description: `Course work: Software Development
+                        Analysis of Algorithms, Software Engineering,
+                         Security & Data Privacy.`,
+            technologies: "Java, Javascript, React, SQL, MongoDB, HTML, CSS ",
             imgUrl: kjImg
         }
     ];
@@ -52,7 +57,7 @@ export const Experience = () => {
                                         <Nav.Link eventKey="second">Infosys</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
-                                        <Nav.Link eventKey="third">Freelancer</Nav.Link>
+                                        <Nav.Link eventKey="third">Education</Nav.Link>
                                     </Nav.Item>
                                 </Nav>
                                 <Tab.Content className="content">
@@ -77,7 +82,7 @@ export const Experience = () => {
                     </Row>
                 </Container>
             </section>
-            <img className="background-image-right" src={experienceBackground} alt="stratosphere background" />
+            {/* <img className="background-image-right" src={""} alt="stratosphere background" /> */}
         </div>
     );
 }

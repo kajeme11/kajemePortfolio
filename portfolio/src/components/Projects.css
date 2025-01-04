@@ -1,0 +1,24 @@
+.project-section{
+    width: 100%;
+    background-color: rgb(38, 38, 38);
+    /* height: 300px; */
+    /* padding-top: 1rem;  */
+    background-image: url("../assets/galaxy5.jpeg");
+}
+
+.col-project{
+    border: 1px solid grey;
+    margin: 1rem;
+    /* background-color: rgb(138, 38, 38); */
+}
+
+h1, p{
+    font-weight: 700;
+}
+ h2{
+    font-weight: bold;
+}
+
+a, p, h2{
+    text-decoration: none;
+}

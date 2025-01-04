@@ -7,6 +7,10 @@
     margin-bottom: 24px;
 }
 
+.technologies h3{
+    background-color: blue
+}
+
 .proj-txtx{
     position: relative;
     text-align: center;
