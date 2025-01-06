@@ -2,7 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import resumeFile from '../assets/viewResume.jpeg';
 import './Banner.css';
-import resume from '../documents/KajemeResume_24.pdf';
+import resume from '../documents/Kajeme_resume.pdf';
 
 
 export const Banner = () => {
